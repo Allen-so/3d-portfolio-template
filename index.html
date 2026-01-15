@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Your Name] | Data & Portfolio</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">[YOUR NAME]</a>
+            <ul class="nav-links">
+                <li><a href="#intro" data-lang="nav_intro">Intro</a></li>
+                <li><a href="#about" data-lang="nav_about">About</a></li>
+                <li><a href="#experience" data-lang="nav_exp">Experience</a></li>
+                <li><a href="#contact" data-lang="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <a href="#" target="_blank" class="nav-resume-btn">
+                    Resume
+                </a>
+                
+                <button id="lang-toggle" class="icon-btn" aria-label="Toggle Language">
+                    <span class="lang-text">EN</span>
+                </button>
+                
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="intro" class="hero-section">
+        <div class="hero-visual-split">
+            
+            <div class="hero-text-content">
+                <h1 class="hero-title-3d">[NAME]</h1>
+                <div class="typewriter-container">
+                    <p class="hero-slogan">
+                        <span class="typing-text">Data Driven. Business Minded.</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="avatar-container-right">
+                <model-viewer 
+                    id="allen-avatar"
+                    src="assets/images/avatar.glb" 
+                    alt="3D Avatar"
+                    camera-controls 
+                    disable-pan
+                    disable-zoom
+                    shadow-intensity="2"
+                    exposure="2" 
+                    camera-orbit="0deg 75deg 105%"
+                    min-camera-orbit="-30deg 75deg 105%"
+                    max-camera-orbit="30deg 75deg 105%"
+                    interaction-prompt="none"
+                    style="width: 100%; height: 100%; background: transparent;"
+                >
+                </model-viewer>
+            </div>
+        </div>
+
+        <div class="spotlight-mask"></div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h2 class="section-title" data-lang="about_title">About Me</h2>
+            <div class="about-content">
+                <p class="main-text" data-lang="about_text">
+                    Hi, I am <b>[Your Name]</b>.<br><br>
+                    This is a placeholder for your introduction. You can describe your background, your major, and your skills here.<br>
+                    Replace this text in <b>index.html</b> and <b>assets/js/main.js</b>.
+                </p>
+
+                <div class="skills-cloud">
+                    <span class="skill-tag">Skill A</span>
+                    <span class="skill-tag">Skill B</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Data Analysis</span>
+                    <span class="skill-tag">Web Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section-padding bg-darker">
+        <div class="container">
+            <h2 class="section-title" data-lang="exp_title">Experience</h2>
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="year">2025 - Present</span>
+                        <h3 data-lang="job1_title">[Job Title 1]</h3>
+                        <p class="company">[Company Name]</p>
+                    </div>
+                    <div class="card-body">
+                        <p data-lang="job1_desc">
+                            • Description of your responsibility.<br>
+                            • Highlight your achievements here.<br>
+                            • Tools used: Python, SQL, etc.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="year">2024 - 2025</span>
+                        <h3 data-lang="job2_title">[Job Title 2]</h3>
+                        <p class="company">[Company Name]</p>
+                    </div>
+                    <div class="card-body">
+                        <p data-lang="job2_desc">
+                            • Description of your responsibility.<br>
+                            • Highlight your achievements here.
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="year">2023 - 2024</span>
+                        <h3 data-lang="job3_title">[Job Title 3]</h3>
+                        <p class="company">[Company Name]</p>
+                    </div>
+                    <div class="card-body">
+                        <p data-lang="job3_desc">
+                            • Description of your responsibility.<br>
+                            • Highlight your achievements here.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container footer-content">
+            <h2 data-lang="footer_title">Let's Connect</h2>
+            <p data-lang="footer_text">
+                Feel free to connect for opportunities.
+            </p>
+            <div class="contact-links">
+                <a href="#" target="_blank" style="border-color: var(--accent-color); color: var(--accent-color);">
+                    <i class="fas fa-file-pdf"></i> Resume
+                </a>
+
+                <a href="mailto:email@example.com">
+                    <i class="fas fa-envelope"></i> email@example.com
+                </a>
+                
+                <a href="tel:+1234567890">
+                    <i class="fas fa-phone"></i> +1 234 567 890
+                </a>
+                
+                <a href="#" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+
+                <a href="#" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a> 
+            </div>
+            <p class="copyright" data-lang="footer_copyright">© 2026 [Your Name]. Built with AI & Passion.</p>
+        </div>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
