@@ -5,7 +5,6 @@ A modern, responsive portfolio template featuring a **3D interactive avatar**, *
 Perfect for Data Analysts, Developers, and Creatives.
 
 ![Preview](assets/images/screenshot.png)
-*(☝️ Replace this with your own screenshot)*
 
 ## ✨ Features
 - **3D Interaction:** Pendulum animation using `<model-viewer>`.
@@ -29,4 +28,5 @@ Simply drag and drop the folder to [Netlify Drop](https://app.netlify.com/drop) 
 Open source under the [MIT License](LICENSE). Free to use!
 
 ---
+
 *Created by [Allen Su](https://github.com/Allen-so)*
